@@ -1,4 +1,459 @@
-h1 {
-    color: red;
-    border: 1px solid red;
+@font-face {
+    font-family: "Open Sans";
+    src: url("../font/OpenSans-Bold.woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../font/OpenSans-Regular.woff");
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-image: url("../images/football_767.jpg");
+    background-size: cover;
+    height: 567px;
+    position: relative;
+}
+
+.header::after {
+    content:"";
+    background-color: #0a0e34;
+    opacity: 0.9;
+    position: absolute;  
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+}
+
+.logo-name {
+    z-index: 2;
+    position: relative;
+    display: flex;
+    padding-top: 33px;
+    width: 133px;
+    margin-left: auto;
+    margin-right: auto;
+      
+}
+
+.surface_logo_text {
+    fill: white;
+    position: relative;
+    z-index: 10;
+    width: 133px;
+    height: 36px;
+}
+
+.name {
+    color: white;        
+    text-transform: uppercase;
+    padding-top: 9px;
+}
+
+.appeal {
+    text-transform: uppercase;
+    position: relative; 
+    color: white;  
+    z-index: 3;
+}
+
+.play {
+    text-transform: uppercase;
+    position: relative; 
+    color: white;  
+    z-index: 4;
+}
+
+.apple-icon {
+    height: 26px;
+    width: 20px;    
+    fill: white;
+    margin-left: 28.5%;
+    margin-top: 3px;
+}
+
+.follow-me {
+    position: relative;
+    z-index: 5;
+    height: 35px;
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;    
+    background-color: #5e42b0;
+    border-radius: 17px;
+    text-transform: uppercase;
+    font-family: "Open Sans";
+    font-weight: bold;
+    margin-top: 90px;
+}
+
+.follow-me-linc {
+    text-decoration: none;
+    color: white;
+    display: flex;
+}
+
+.follow-me-lable {
+    font-size: 8px;
+    margin-top: 6px;
+    margin-left: 8px;
+}
+
+.app {
+    font-weight: normal;
+}
+
+.follow-me-google {
+    position: relative;
+    z-index: 5;
+    height: 35px;
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;    
+    background-color: #5e42b0;
+    border-radius: 17px;
+    text-transform: uppercase;
+    font-family: "Open Sans";
+    font-weight: bold;
+    margin-top: 13px;
+}
+
+.appeal {
+    margin-top: 70px;
+    font-family: "Open Sans";
+    font-weight: normal;    
+    font-size: 28px;
+    padding-left: 20px;
+}
+
+.play {
+    margin-top: 30px;
+    font-family: "Open Sans";
+    font-weight: normal;    
+    font-size: 28px;
+    padding-left: 65px;
+}
+
+.g-icon {
+    height: 26px;
+    width: 20px;    
+    fill: white;
+    margin-left: 28.5%;
+    margin-top: 3px;
+}
+
+.follow-me-Glinc{
+    text-decoration: none;
+    color: white;
+    display: flex;
+}
+
+.intro {
+    min-height: 390px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.athlets {
+    position: relative;
+}
+
+.athlets::after {
+    content:  url(../images/footballer_192.png);;
+    position: absolute;  
+    margin-left: auto;
+    margin-right: auto;
+    top: 80px; 
+    margin-left: calc(50% - 96px);
+    
+}
+
+.heading {
+    font-size: 50px;
+    color: #e7e7e7;
+    font-family: "Open Sans";
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.players {
+    min-height: 213px;
+    background-color: #fafafa;
+}
+
+.num {
+    font-size: 14px;    
+    color: #000000;
+    font-family: "Open Sans";
+    font-weight: normal;    
+    align-self: center;
+}
+
+.num::after {
+    content: "";
+    display: block;
+    margin: 2px auto 0px auto;
+    width: 15px;
+    height: 4px;
+    background-color:#5e42b0;    
+}
+
+.name_connection {
+    font-size: 23px;
+    color: #c1c1c1;
+    font-family: "Open Sans";
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-left: 11px;
+    
+}
+
+.content {
+    font-size: 15px;
+    color: #000000;
+    font-family: "Open Sans";
+    font-weight: bold;
+    margin-top: 27px;    
+    display: block;
+}
+
+.num_name {
+    display: flex;
+}
+
+.collabaration {
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 58px;
+    padding-top: 58px;
+}
+
+.growth {
+    display: block;
+    background-color: #5e42b0;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 58px;
+    padding-top: 58px;
+}
+
+.num_growth {
+    font-size: 14px;    
+    color:white;
+    font-family: "Open Sans";
+    font-weight: normal;    
+    align-self: center;
+}
+
+.num_growth::after {
+    content: "";
+    display: block;
+    margin: 4px auto 0px auto;
+    width: 15px;
+    height: 5px;
+    background-color:white;    
+}
+
+.content_growth {
+    color: white;
+    font-size: 15px;
+    font-family: "Open Sans";
+    font-weight: bold;
+    margin-top: 27px;    
+    display: block;
+}
+
+.connection {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 58px;
+}
+
+.players {
+    position: relative;
+}
+
+.players::after {
+    content:  url(../images/basketballer_302.png);;
+    position: absolute;  
+    margin-left: auto;
+    margin-right: auto;
+    top: 80px; 
+    margin-left: calc(50% - 151px);
+    
+}
+
+.active {
+    position: relative;
+}
+
+.active::after {
+    content:  url(../images/basketballer_302.png);;
+    position: absolute;  
+    margin-left: auto;
+    margin-right: auto;
+    top: 80px; 
+    margin-left: calc(50% - 151px);
+    
+}
+
+.growth_players {
+    background-color: #090c35;
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 58px;
+    padding-top: 58px;
+}
+
+.pictures_be_active {
+    background-image: url(..//images//be-active_640.jpg);
+    background-size: cover;
+    height: 351px;
+    position: relative;
+}
+
+.pictures_be_active::before {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 70px;
+    background-color: #5e42b0; 
+    bottom: -13px;
+    left: 20px;
+    position: absolute;
+}
+
+.text_news {
+    padding-left: 20px;
+}
+
+.head_new_block {
+    font-size: 28px;
+    color: #e7e7e7;
+    font-family: "Open Sans";
+    font-weight: normal;
+    text-transform: uppercase;
+    padding-top: 34px;
+}
+
+.text_new_block {
+    font-size: 16px;
+    color: #000000;
+    font-family: "Open Sans";
+    font-weight: bold;
+    padding-top: 23px;
+    padding-bottom: 72px;
+}
+
+.pictures_find_contact {
+    background-image: url(..//images/find-contact_640.jpg);
+    background-size: cover;
+    height: 351px;
+    position: relative;
+}
+
+.pictures_find_contact::before {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 70px;
+    background-color: #5e42b0; 
+    bottom: -13px;
+    left: 20px;
+    position: absolute;
+}
+
+.pictures_work_it {
+    background-image: url(..//images/work-it_640.jpg);
+    background-size: cover;
+    height: 351px;
+    position: relative;
+}
+
+.pictures_work_it::before {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 70px;
+    background-color: #5e42b0; 
+    bottom: -13px;
+    left: 20px;
+    position: absolute;
+}
+
+.foot {
+    background-image: url(..//images/game_767.jpg);
+    background-size: cover;
+    height: 569px;
+    position: relative;
+}
+
+.foot::after {
+    content:"";
+    background-color: #0a0e34;
+    opacity: 0.9;
+    position: absolute;  
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+}
+
+.color_logo {
+    width: 56px;
+    margin-left: calc(50% - 28px);
+    margin-top: 12px;
+     
+}
+
+.foot {
+    padding-top: 100px;
+    box-sizing: border-box;
+}
+
+.footer_logo {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75px;
+    height: 75px;
+    position: relative;
+    z-index: 100;
+    fill: white;
+    background-image: linear-gradient(0deg, #50329c 0%, #5e3db3 51%, #7751db 100%);
+    border-radius: 15px;    
+}
+
+.footer_head {    
+    font-size: 32px;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-weight: normal;    
+    margin-top: 60px;
+}
+
+.footer_text {
+    text-align: center;
+    position: relative;
+    z-index: 101;
+    text-transform: uppercase;
+}
+
+.footer_slogan {
+    font-size: 14px;
+    color: #9b8ec1;
+    font-family: "Open Sans";
+    font-weight: bold;
 }
